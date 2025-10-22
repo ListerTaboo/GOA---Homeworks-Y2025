@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOA - About Me</title>
+
+  <!-- მარტივი CSS დიზაინი -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth; /* საშუალებას იძლევა, რომ გვერდი რბილად ჩაწიოს ბმულზე დაჭერისას */
+    }
+
+    /* ნავიგაცია */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      position: sticky; /* ნავიგაცია რჩება ზედა ნაწილში */
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* სექციების საერთო სტილი */
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    #about { background-color: #f4f4f4; }
+    #skills { background-color: #e2e2e2; }
+    #projects { background-color: #d0d0d0; }
+    #contact { background-color: #bebebe; }
+
+    h2 {
+      color: #333;
+    }
+
+    /* ღილაკის სტილი (contact-ში გამოსაყენებლად) */
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+  ნავიგაციის მენიუ, რომელიც გადაგვიყვანს შესაბამის სექციებზე 
+  -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me სექცია -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>გამარჯობა! მე ვარ ილია ტაბატაძე — ვცხოვრობ საქართველოში და მიყვარს ტექნოლოგიები, პროგრამირება და დიზაინი.  
+    თავისუფალ დროს მიყვარს ახალი რაღაცების სწავლა და პროექტებზე მუშაობა, სადაც შემიძლია ჩემი იდეები რეალობად ვაქციო.</p>
+  </section>
+
+  <!-- Skills სექცია -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>HTML / CSS / JavaScript</li>
+      <li>Python პროგრამირება</li>
+      <li>UI/UX დიზაინის საფუძვლები</li>
+      <li>ვებსაიტების შექმნა და ოპტიმიზაცია</li>
+    </ul>
+  </section>
+
+  <!-- Projects სექცია -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p>აქ შეგიძლიათ იხილოთ ჩემი ნამუშევრები:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>Portfolio Website</li>
+      <li>პატარა JavaScript თამაში</li>
+      <li>Responsive Design ვებსაიტი</li>
+    </ul>
+  </section>
+
+  <!-- Contact სექცია -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>დამიკავშირდით თუ გსურთ თანამშრომლობა ან კითხვების დასმა.</p>
+    <p>ელ.ფოსტა: <a href="mailto:ilia@example.com">ilia@example.com</a></p>
+    <button onclick="alert('გმადლობ რომ დამიკავშირდი!')">მოგწერე!</button>
+  </section>
+
+</body>
+</html>
