@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>GOA - რეგისტრაცია</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="GOACIRCLE.png">
+</head>
+<body>
+  <nav>
+    <a href="index.html"><img src="GOACIRCLE.png" alt="Logo" class="logo"></a>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>ახალი მომხმარებლის რეგისტრაცია</h2>
+      <form>
+        <label>მომხმარებლის სახელი:</label>
+        <input type="text" name="username" required>
+
+        <label>ელ.ფოსტა:</label>
+        <input type="email" name="email" required>
+
+        <label>პაროლი:</label>
+        <input type="password" name="password" minlength="6" required>
+
+        <label>გაიმეორეთ პაროლი:</label>
+        <input type="password" name="confirm_password" minlength="6" required>
+
+        <button type="submit">რეგისტრაცია</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>შესვლა არსებულ აქაუნთზე</h2>
+      <form>
+        <label>მომხმარებლის სახელი ან ელ.ფოსტა:</label>
+        <input type="text" name="login_user" required>
+
+        <label>პაროლი:</label>
+        <input type="password" name="login_pass" required>
+
+        <button type="submit">შესვლა</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

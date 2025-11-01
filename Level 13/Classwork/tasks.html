@@ -1,0 +1,52 @@
+<!--1) შექმენით სარეგისტრაციო გვერდი, რომელზეც გექნებათ ფორმა, მომხმარებელს უნდა შემოატანინოთ სახელი, გვარი, ემაილი, პაროლი
+
+ყველა შესატან ველს წინ დაუწერეთ იარლიყი რომელიც მომხმარებელს მიუთითებს თუ რა უნდა შეიტანოს კონკრეტუკლ ფორმაში
+
+input და label თეგები ერთმანეთან დააკავშირეთ for და id ატრიბუტების გამოყენებით
+
+label - for
+input - id
+
+1. name
+2. surname
+3. email
+4. password-->
+
+<!--2) პირველ დავლებას დაამატეთ name, value და required ატრიბუტები, ასევე პირობების დამადასტურებელი მოსანიშნი ყუთი (checkbox) და gender-ის მისათითებლად 2 radio input-->
+
+<form>
+        <label for="username">Username</label>
+        <input type="text" id="username"  name="FirstName" required> 
+
+        <br>
+
+                <label for="surname">Surname</label>
+        <input type="text" id="surname"  name="LastName" required> 
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <br>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="Password" required>
+
+                <br>
+        <label for="radio">Gender: Female</label>
+        <input type="radio" name="gender" id="radio" value="male" required>
+
+        <label for="radio2">Male</label>
+        <input type="radio" name="gender" id="radio2" value="female" required>
+
+        <br>
+
+        <form>
+        <label for="terms">Terms</label>
+        <input type="checkbox" id="terms">
+
+        <br>
+        
+        <input type="submit">
+</form>

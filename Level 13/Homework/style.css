@@ -1,0 +1,79 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  font-size: 1em;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #085a27;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #085a27;
+}
+
+nav {
+  background-color: #085a23;
+  padding: 10px;
+  display: flex;             /* ხაზზე აყენებს ელემენტებს */
+  align-items: center;       /* ვერტიკალურად აყენებს ცენტრში */
+  justify-content: center;   /* შეგიძლია შეცვალო space-between-ით */
+  gap: 15px;
+}
+
+.logo {
+  width: 40px;               /* ზომა */
+  height: 40px;
+  border-radius: 50%;        /* თუ გინდა მრგვალი იყოს */
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
